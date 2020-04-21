@@ -1,0 +1,37 @@
+#lform {
+	display: block;
+	margin: auto;
+}
+.linput {
+	width: 50%;
+	margin: auto;
+	box-shadow: 3px 3px darkgreen;
+}
+#subButton {
+	width: 30%;
+	margin: auto;
+}
+#loginDiv {
+	text-align: center;
+	color: ;
+	border: 3px solid darkgreen;
+	border-radius: 20px;
+	width: 50%;
+	min-width: 350px;
+	height: 75%;
+	margin: auto;
+	margin-top: 5%;
+	padding: 5% 0 10% 0;
+	background: #11998e; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#38ef7d,
+		#11998e
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: 'Oswald', sans-serif;
+	box-shadow: 10px 10px gray;
+	z-index: 3;
+	position: relative;
+}

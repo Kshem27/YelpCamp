@@ -15,7 +15,7 @@ var campgroundRoutes = require('./routes/campgrounds'),
 	indexRoutes = require('./routes/index');
 const PORT = process.env.PORT || 3000;
 connectDB();
-// seedDB();
+// seedDB(); //to seed the database
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
@@ -40,6 +40,7 @@ app.use(function(req, res, next) {
 	res.locals.error = req.flash('error');
 	res.locals.success = req.flash('success');
 	next();
+	//res.status(404).send('This page does not exist..');
 });
 
 app.get('/', (req, res) => {
@@ -48,6 +49,9 @@ app.get('/', (req, res) => {
 app.use('/campgrounds', campgroundRoutes);
 app.use('/campgrounds/:id/comments', commentRoutes);
 app.use(indexRoutes);
+app.use(function(req, res) {
+	res.status(404).send('error');
+});
 app.listen(PORT, () => {
 	console.log('Server has Started');
 });
