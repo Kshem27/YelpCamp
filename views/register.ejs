@@ -1,7 +1,34 @@
 <%- include("./partials/header.ejs") %>
-<form action="/register" method="POST">
-<input type="text" placeholder="Name" name="username">
-<input type="password" placeholder="Password" name="password">
-<input type="submit">
-</form>
+<style>
+body{
+    background: #4AC29A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}</style>
+<div class="row">
+    <div class="col-sm-12 col-lg-6" id="regPage">
+            <div class="container">
+                <h1 class="display-4 text-success">Welcome To YelpCamp</h1>
+                <p class="lead">These are all the wonderful camps across the world...<br>
+                    Register to find out more....
+                </p>
+                <p><a href="/login">Login</a> if already registered</p>
+            </div>
+    </div>
+<div id="loginDiv" class="col-sm-12 col-lg-6">
+    <h1 class="display-4">Register</h1>
+    <form action="/register" method="POST" class="d-flex flex-column">
+        <div class="form-group">
+                <label>Username</label>
+                <input type="text" placeholder="Name" name="username" class="form-control linput">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Password" name="password" class="form-control linput">
+        </div>
+    <input type="submit" class="btn btn-info" id="subButton">
+    </form>
+</div>
+</div>
 <%- include("./partials/footer.ejs") %>

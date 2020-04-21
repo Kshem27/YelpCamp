@@ -16,7 +16,7 @@
 	border: 3px solid darkgreen;
 	border-radius: 20px;
 	width: 50%;
-	min-width: 350px;
+	min-width: 400px;
 	height: 75%;
 	margin: auto;
 	margin-top: 5%;
@@ -32,4 +32,7 @@
 	box-shadow: 10px 10px #056329;
 	z-index: 3;
 	position: relative;
+}
+#regPage {
+	margin-top: 10%;
 }
