@@ -20,6 +20,7 @@
 	height: 75%;
 	margin: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	padding: 5% 0 10% 0;
 	background: #11998e; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
