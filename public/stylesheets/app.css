@@ -36,3 +36,37 @@
 #regPage {
 	margin-top: 10%;
 }
+body {
+	background: #4ac29a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #bdfff3, #4ac29a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#bdfff3,
+		#4ac29a
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cardDis {
+	background: #b2fefa; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0ed2f7, #b2fefa); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0ed2f7,
+		#b2fefa
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10%;
+}
+#jumbotron {
+	/* background: url('http://7-themes.com/data_images/out/21/6840640-pattern-background.jpg'); */
+	background: url('https://source.unsplash.com/0ZPSX_mQ3xI');
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#navbar {
+	background: #4ac29a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #bdfff3, #4ac29a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #bdfff3, #4ac29a);
+	color: black;
+}
+#commentForm {
+	width: 60%;
+}

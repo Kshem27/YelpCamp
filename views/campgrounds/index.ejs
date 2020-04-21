@@ -1,5 +1,5 @@
 <%-include("../partials/header.ejs")%>
-<div class="jumbotron ">
+<div class="jumbotron"  id="jumbotron">
     <div class="container">
         <h1 class="display-4 text-info">Welcome To YelpCamp</h1>
         <p class="lead">These are all the wonderful camps across the world...</p>
@@ -9,7 +9,7 @@
 <div class="row">
 <% camps.forEach((camp)=>{%>
     <div class="col-lg-4 col-md-6">
-    <div class="card" style="margin-left: 10px;">
+    <div class="card cardDis" style="margin-left: 10px;">
         <img src="<%=camp.image%>" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%=camp.name%></h5>

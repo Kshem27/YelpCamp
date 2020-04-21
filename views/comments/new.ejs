@@ -1,4 +1,11 @@
-<form action="/campgrounds/<%=camp._id%>/comments" method="POST">
-    <input type="text" name="comment[text]" placeholder="Comment">
-    <input type="submit">
+<%-include('../partials/header.ejs') %>
+<div id="commentForm">
+<form class=""action="/campgrounds/<%=camp._id%>/comments" method="POST" id="lform">
+    <div class="form-group">
+        <label>Comment</label>
+        <input type="text" name="comment[text]" placeholder="Comment" class="form-control linput">
+    </div>
+   <input type="submit" class="btn btn-primary">
 </form>
+</div>
+<%-include('../partials/footer.ejs') %>
